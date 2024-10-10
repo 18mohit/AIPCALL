@@ -1,0 +1,55 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex .item {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  padding: 10px;
+}
+.flex .item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+
+.flex .item img:hover {
+  transform: scale(1.1);
+  border: 1px solid rgb(49, 161, 146);
+  cursor: copy;
+}
+
+.btntop {
+  margin-left: 50%;
+}
+
+.search {
+  color: aliceblue;
+}
+
+.stiky {
+  position: sticky;
+  width: 100%;
+  /* top: 10; */
+  border: 1px solid whitesmoke;
+  margin-bottom: 20px;
+  background-color: rgb(42, 38, 38);
+}
